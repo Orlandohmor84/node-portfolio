@@ -6,6 +6,16 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var portfolioRouter = require('./routes/portfolio');
+var sflusRouter = require('./routes/portfolio-sfl-us');
+var sflcaRouter = require('./routes/portfolio-sfl-ca');
+var sfldocsRouter = require('./routes/portfolio-sfl-docs');
+var sflicRouter = require('./routes/portfolio-sfl-ice-cream');
+var websolutionsRouter = require('./routes/portfolio-web-solutions');
+var tiofRouter = require('./routes/portfolio-tiof');
+var tioflpRouter = require('./routes/portfolio-tiof-lp');
+var ibuildwebsv1Router = require('./routes/portfolio-ibuildwebs-v1');
+var eggshubRouter = require('./routes/portfolio-eggshub');
 
 var app = express();
 
@@ -21,6 +31,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/portfolio', portfolioRouter);
+app.use('/portfolio-sfl-us', sflusRouter);
+app.use('/portfolio-sfl-ca', sflcaRouter);
+app.use('/portfolio-sfl-docs', sfldocsRouter);
+app.use('/portfolio-sfl-ice-cream', sflicRouter);
+app.use('/portfolio-web-solutions', websolutionsRouter);
+app.use('/portfolio-tiof', tiofRouter);
+app.use('/portfolio-tiof-lp', tioflpRouter);
+app.use('/portfolio-ibuildwebs-v1', ibuildwebsv1Router);
+app.use('/portfolio-eggshub', eggshubRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
