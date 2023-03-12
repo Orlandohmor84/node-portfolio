@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 0.0
+* Version 0.0.1
 
 ## How do I get set up ##
 
@@ -26,7 +26,7 @@
 
 ## Release History ##
 
-* v1.0.0 - Coming Soon!
+* v0.0.1 - Modern Business Bootstrap Template Implementation.
 
 ### Questions ###
 
