@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var aboutRouter = require('./routes/about');
+var skillsRouter = require('./routes/skills');
 var portfolioRouter = require('./routes/portfolio');
 var sflusRouter = require('./routes/portfolio-sfl-us');
 var sflcaRouter = require('./routes/portfolio-sfl-ca');
@@ -30,6 +32,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/about', aboutRouter);
+app.use('/skills', skillsRouter);
 app.use('/users', usersRouter);
 app.use('/portfolio', portfolioRouter);
 app.use('/portfolio-sfl-us', sflusRouter);
