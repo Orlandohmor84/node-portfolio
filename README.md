@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 0.0.3
+* Version 0.0.4
 
 ## How do I get set up ##
 
@@ -26,6 +26,7 @@
 
 ## Release History ##
 
+* v0.0.4 - Infinite Loop Video.
 * v0.0.3 - Portfolio Overview Content.
 * v0.0.2 - Baseline partials. Content Additions.
 * v0.0.1 - Modern Business Bootstrap Template Implementation.
