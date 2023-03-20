@@ -18,6 +18,7 @@ var tiofRouter = require('./routes/portfolio-tiof');
 var tioflpRouter = require('./routes/portfolio-tiof-lp');
 var ibuildwebsv1Router = require('./routes/portfolio-ibuildwebs-v1');
 var eggshubRouter = require('./routes/portfolio-eggshub');
+var contactRouter = require('./routes/contact');
 
 var app = express();
 
@@ -45,6 +46,7 @@ app.use('/portfolio-tiof', tiofRouter);
 app.use('/portfolio-tiof-lp', tioflpRouter);
 app.use('/portfolio-ibuildwebs-v1', ibuildwebsv1Router);
 app.use('/portfolio-eggshub', eggshubRouter);
+app.use('/contact', contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
