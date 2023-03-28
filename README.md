@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 0.0.7
+* Version 0.0.8
 
 ## How do I get set up ##
 
@@ -26,6 +26,7 @@
 
 ## Release History ##
 
+* v0.0.8 - 2023/03/28 - Skills Cleanup.
 * v0.0.7 - 2023/03/28 - Added Images to About View.
 * v0.0.6 - 2023/03/27 - Basic Skills and About Views.
 * v0.0.5 - 2023/03/20 - Basic Home Layout.
