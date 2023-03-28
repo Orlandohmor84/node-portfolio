@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 0.0.6
+* Version 0.0.7
 
 ## How do I get set up ##
 
@@ -26,12 +26,13 @@
 
 ## Release History ##
 
-* v0.0.6 - Basic Skills and About Views.
-* v0.0.5 - Basic Home Layout.
-* v0.0.4 - Infinite Loop Video.
-* v0.0.3 - Portfolio Overview Content.
-* v0.0.2 - Baseline partials. Content Additions.
-* v0.0.1 - Modern Business Bootstrap Template Implementation.
+* v0.0.7 - 2023/03/28 - Added Images to About View.
+* v0.0.6 - 2023/03/27 - Basic Skills and About Views.
+* v0.0.5 - 2023/03/20 - Basic Home Layout.
+* v0.0.4 - 2023/03/13 - Infinite Loop Video.
+* v0.0.3 - 2023/03/13 - Portfolio Overview Content.
+* v0.0.2 - 2023/03/12 - Baseline partials. Content Additions.
+* v0.0.1 - 2023/03/12 - Modern Business Bootstrap Template Implementation.
 
 ### Questions ###
 
