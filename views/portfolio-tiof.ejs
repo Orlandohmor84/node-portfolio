@@ -11,31 +11,81 @@
                 <div class="container px-5 my-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-6">
-                            <div class="text-center mb-5">
+                            <div class="text-center mb-5" data-aos="fade-up">
                                 <h1 class="fw-bolder">The Institute of F.I.L.M.S. Website</h1>
                                 <p class="lead fw-normal text-muted mb-0">Developed new website for institution of higher learning. Website integrates with payment processer, appointment scheduler, online application, and live chat. Backend processes were setup to automate lead notifications for sales reps.</p>
                             </div>
                         </div>
                     </div>
                     <div class="row gx-5">
-                        <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="https://storage.googleapis.com/ibuildwebs-public/nodes/tiof-all-devices-final-v1-1300x752.webp" alt="The Institute of F.I.M.S." /></div>
-                        <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-                        <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
+                        <div class="col-12" data-aos="fade-up"><img class="img-fluid rounded-3 mb-5" src="https://storage.googleapis.com/ibuildwebs-public/nodes/tiof-all-devices-final-v1-1300x752.webp" alt="The Institute of F.I.M.S." /></div>
+                        <!--<div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>-->
+                        <!--<div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>-->
                     </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-6">
+                    <section class="bg-light py-5">
+                        <div class="container px-5 my-5">
                             <div class="text-center mb-5">
-                                <p class="lead fw-normal text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.</p>
-                                <a class="text-decoration-none" target="_blank" href="https://theinstituteoffilms.org/home/">
-                                    View website
+                                <h1 class="fw-bolder" data-aos="fade-up">Methodology</h1>
+                                <% include partials/skills-legend.ejs %>
+                            </div>
+                            <div class="row gx-5 justify-content-center">
+                                <!-- Code -->
+                                <div class="col-lg-4">
+                                    <div class="card mb-5 mb-xl-0">
+                                        <div class="card-body p-5">
+                                            <div class="small text-uppercase fw-bold mb-4">Code</div>
+                                            <ul class="list-unstyled mb-4">
+                                                <% include partials/skills/html5.ejs %>
+                                                <% include partials/skills/css3.ejs %>
+                                                <% include partials/skills/javascript.ejs %>
+                                                <% include partials/skills/php.ejs %>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tools -->
+                                <div class="col-lg-4">
+                                    <div class="card mb-5 mb-xl-0">
+                                        <div class="card-body p-5">
+                                            <div class="small text-uppercase fw-bold mb-4">
+                                                Tools
+                                            </div>
+                                            <ul class="list-unstyled mb-4">
+                                                <% include partials/skills/wp.ejs %>
+                                                <% include partials/skills/asana.ejs %>
+                                                <% include partials/skills/zapier.ejs%>
+                                                <% include partials/skills/google-workspace.ejs %>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Integrations -->
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <div class="card-body p-5">
+                                            <div class="small text-uppercase fw-bold mb-5">Integrations</div>
+                                            <ul class="list-unstyled mb-4">
+                                                <% include partials/skills/ga.ejs %>
+                                                <% include partials/skills/klaviyo.ejs %>
+                                                <% include partials/skills/jotform.ejs %>
+                                                <% include partials/skills/calendly.ejs %>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center my-5">
+                                <a class="btn btn-lg btn-primary" target="_blank" href="https://theinstituteoffilms.org/home/">
+                                    View Website
                                     <i class="bi-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </section>
         </main>
+        <% include partials/contact-cta %>
         <% include partials/footer %>
         <% include partials/footer-scripts %>
     </body>
