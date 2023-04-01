@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 0.2.2
+* Version 0.2.3
 
 ## How do I get set up ##
 
@@ -26,7 +26,8 @@
 
 ## Release History ##
 
-* v0.2.2 - 2023/03/28 - TIOF Edits.
+* v0.2.3 - 2023/04/01 - SFL CA View.
+* v0.2.2 - 2023/04/01 - TIOF Edits.
 * v0.2.1 - 2023/03/28 - TIOF View.
 * v0.2.0 - 2023/03/28 - Animate on Scroll.
 * v0.1.0 - 2023/03/28 - Skills Refactor. SFL US Ecomm View.
