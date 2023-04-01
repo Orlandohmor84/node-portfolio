@@ -21,6 +21,7 @@ var eggshubRouter = require('./routes/portfolio-eggshub');
 var vacaRouter = require('./routes/portfolio-vaca');
 var jktRouter = require('./routes/portfolio-jkt');
 var contactRouter = require('./routes/contact');
+const privacyRouter = require('./routes/privacy');
 
 var app = express();
 
@@ -51,6 +52,7 @@ app.use('/portfolio-eggshub', eggshubRouter);
 app.use('/portfolio-vaca', vacaRouter);
 app.use('/portfolio-jkt', jktRouter);
 app.use('/contact', contactRouter);
+app.use('/privacy', privacyRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
