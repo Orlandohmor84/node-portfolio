@@ -3,9 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('portfolio-ibuildwebs-v1', 
-    { title: 'iBuildWebs v2',
-      pageId: 'portfolio'
+  res.render('portfolio-eggshub', 
+    { title: 'EggsHub',
+      pageId: 'eggshub',
+      summary_p1: 'WordPress blog all about eggs.'
   });
 });
 
