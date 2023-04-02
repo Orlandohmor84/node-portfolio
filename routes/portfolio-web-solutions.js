@@ -4,8 +4,9 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('portfolio-web-solutions', 
-    { title: 'iBuildWebs v2',
-      pageId: 'portfolio'
+    { title: 'I Build Web Solutions',
+      pageId: 'ibws',
+      summary_p1: 'A custom PHP website with client login and accounts component for clients to access project details, status, reports, etc.'
   });
 });
 
