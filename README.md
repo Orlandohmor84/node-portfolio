@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 0.2.5
+* Version 0.2.6
 
 ## How do I get set up ##
 
@@ -26,6 +26,7 @@
 
 ## Release History ##
 
+* v0.2.6 - 2023/04/02 - TIOF LP View.
 * v0.2.5 - 2023/04/02 - IBWS View.
 * v0.2.4 - 2023/04/01 - Privacy Policy.
 * v0.2.3 - 2023/04/01 - SFL CA View.
