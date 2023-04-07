@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 0.3.1
+* Version 0.3.2
 
 ## How do I get set up ##
 
@@ -26,6 +26,7 @@
 
 ## Release History ##
 
+* v0.3.2 - 2023/04/07 - Google Analytics Setup.
 * v0.3.1 - 2023/04/07 - Nav Update.
 * v0.3.0 - 2023/04/07 - HubSpot Contact Form.
 * v0.2.9 - 2023/04/02 - Vaca View.
