@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 0.4.0
+* Version 0.4.1
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v0.4.1 - 2032/05/07 - Updated Intro Text.
 * v0.4.0 - 2023-05/07 - Lucky Orange Install.
 * v0.3.3 - 2023/05/07 - Mobile Spacing on Cards.
 * v0.3.2 - 2023/04/07 - Google Analytics Setup.
