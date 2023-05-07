@@ -3,11 +3,12 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 0.3.2
+* Version 0.3.3
 
 ## How do I get set up ##
 
 * Clone repo to start [https://github.com/Orlandohmor84/node-portfolio.git](https://github.com/Orlandohmor84/node-portfolio.git)
+* Deploy by pushing to Github (origin) master branch
 
 ## Vendors ##
 
@@ -26,6 +27,7 @@
 
 ## Release History ##
 
+* v0.3.3 - 2023/05/07 - Mobile Spacing on Cards.
 * v0.3.2 - 2023/04/07 - Google Analytics Setup.
 * v0.3.1 - 2023/04/07 - Nav Update.
 * v0.3.0 - 2023/04/07 - HubSpot Contact Form.

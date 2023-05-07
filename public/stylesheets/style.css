@@ -11,3 +11,14 @@
 .centerImage {
     margin: auto;
 }
+.card-body {
+    padding: 10px;
+    text-align: center;
+}
+.skills legend-wrapper h2 {
+    font-size: 1.25rem;
+    margin-top: 30px;
+}
+.skills legend-wrapper h3 {
+    font-size: 1rem;
+}
