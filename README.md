@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v0.4.3 - 2023/05/08 - Core Competancies Edits.
 * v0.4.2 - 2023/05/07 - Text Edits.
 * v0.4.1 - 2023/05/07 - Updated Intro Text.
 * v0.4.0 - 2023-05/07 - Lucky Orange Install.
