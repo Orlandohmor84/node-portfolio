@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 0.4.2
+* Version 2.0.0
 
 ## How do I get set up ##
 
