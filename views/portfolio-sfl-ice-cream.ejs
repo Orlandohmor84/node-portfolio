@@ -14,26 +14,78 @@
                             <div class="text-center mb-5" data-aos="fade-up">
                                 <h1 class="fw-bolder"><%= title %></h1>
                                 <p class="lead fw-normal text-muted"><%- summary_p1 %></p>
-                                <p class="text-muted mb-0"><%- summary_p2 %></p>
                             </div>
                         </div>
                     </div>
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-12 text-center" data-aos="fade-up"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/1300x700/343a40/6c757d" alt="..." /></div>
-                        <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-                        <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
+                        <div class="col-12 text-center" data-aos="fade-up"><img class="img-fluid rounded-3 mb-5" src="https://storage.googleapis.com/ibuildwebs-public/nodes/ice-cream/Smart-for-Life-Ice-Cream-Protein-Bar.webp" alt="<%- title %>" /></div>
+                        <!--<div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>-->
+                        <!--<div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>-->
                     </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-6">
+                    <section class="bg-light py-5">
+                        <div class="container px-5 my-5">
                             <div class="text-center mb-5">
-                                <p class="lead fw-normal text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.</p>
-                                <a class="text-decoration-none" href="#!">
-                                    View project
+                                <h1 class="fw-bolder" data-aos="fade-up">Methodology</h1>
+                                <% include partials/skills-legend.ejs %>
+                            </div>
+                            <div class="row gx-5 justify-content-center">
+                                <!-- Code -->
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card mb-5 mb-xl-0">
+                                        <div class="card-body">
+                                            <div class="small text-uppercase fw-bold mb-4">Code</div>
+                                            <ul class="list-unstyled mb-4">
+                                                <% include partials/skills/html5.ejs %>
+                                                <% include partials/skills/css3.ejs %>
+                                                <% include partials/skills/javascript.ejs %>
+                                                <% include partials/skills/jquery.ejs %>
+                                                <% include partials/skills/php.ejs %>
+                                                <% include partials/skills/git.ejs %>
+                                                <% include partials/skills/bootstrap.ejs %>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tools -->
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card mb-5 mb-xl-0">
+                                        <div class="card-body">
+                                            <div class="small text-uppercase fw-bold mb-4">
+                                                Tools
+                                            </div>
+                                            <ul class="list-unstyled mb-4">
+                                                <% include partials/skills/github.ejs %>
+                                                <% include partials/skills/asana.ejs %>
+                                                <% include partials/skills/zapier.ejs %>
+                                                <% include partials/skills/google-workspace.ejs %>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Integrations -->
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="small text-uppercase fw-bold mb-4">Integrations</div>
+                                            <ul class="list-unstyled mb-4">
+                                                <% include partials/skills/ga.ejs %>
+                                                <% include partials/skills/gtm.ejs %>
+                                                <% include partials/skills/klaviyo.ejs %>
+                                                <% include partials/skills/recharge.ejs %>
+                                                <% include partials/skills/jotform.ejs %>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center my-5">
+                                <a class="btn btn-lg btn-primary" target="_blank" href="<%= link_external %>">
+                                    View Website
                                     <i class="bi-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </section>
         </main>

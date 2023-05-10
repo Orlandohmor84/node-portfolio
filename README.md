@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.0.0
+* Version 2.0.1
 
 ## How do I get set up ##
 
@@ -27,6 +27,8 @@
 
 ## Release History ##
 
+* v2.0.1 - 2023/05/10 - Ice Cream Protein Bars View.
+* v2.0.0 - 2023/05/08 - Initial Release.
 * v0.4.3 - 2023/05/08 - Core Competancies Edits.
 * v0.4.2 - 2023/05/07 - Text Edits.
 * v0.4.1 - 2023/05/07 - Updated Intro Text.
