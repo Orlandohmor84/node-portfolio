@@ -20,6 +20,7 @@ var ibuildwebsv1Router = require('./routes/portfolio-ibuildwebs-v1');
 var eggshubRouter = require('./routes/portfolio-eggshub');
 var vacaRouter = require('./routes/portfolio-vaca');
 var jktRouter = require('./routes/portfolio-jkt');
+var naniSweetsRouter = require('./routes/portfolio-nani-sweets');
 var contactRouter = require('./routes/contact');
 const privacyRouter = require('./routes/privacy');
 
@@ -51,6 +52,7 @@ app.use('/portfolio-ibuildwebs-v1', ibuildwebsv1Router);
 app.use('/portfolio-eggshub', eggshubRouter);
 app.use('/portfolio-vaca', vacaRouter);
 app.use('/portfolio-jkt', jktRouter);
+app.use('/portfolio-nani-sweets', naniSweetsRouter);
 app.use('/contact', contactRouter);
 app.use('/privacy', privacyRouter);
 
