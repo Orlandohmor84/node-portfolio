@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.2.2
+* Version 2.2.3
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.2.3 - 2024/08/06 - SDV View.
 * v2.2.2 - 2024/08/05 - Fixed Nani Sweets Website Link.
 * v2.2.1 - 2024/08/05 - Nani Sweets View. Portfolio Updates.
 * v2.1.0 - 2023/12/12 - GHL Contact Form.
