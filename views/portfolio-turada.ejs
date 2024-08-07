@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include partials/head.ejs %>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <% include partials/nav-main.ejs %>
+            <!-- Page Content-->
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5" data-aos="fade-up">
+                                <h1 class="fw-bolder"><%= title %></h1>
+                                <p class="lead fw-normal text-muted"><%- summary_p1 %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-12 text-center" data-aos="fade-up"><img class="img-fluid rounded-3 mb-5" src="https://storage.googleapis.com/ibuildwebs-public/nodes/tropical-timber/turada/Home-Turada-Hardwood-Shingles-1062x720.webp" alt="<%= title %>" /></div>
+                        <!--<div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>-->
+                        <!--<div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>-->
+                    </div>
+                    <section class="bg-light py-5">
+                        <div class="container px-5 my-5">
+                            <div class="text-center mb-5">
+                                <h1 class="fw-bolder" data-aos="fade-up">Methodology</h1>
+                                <% include partials/skills-legend.ejs %>
+                            </div>
+                            <div class="row gx-5 justify-content-center">
+                                <!-- Code -->
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card mb-5 mb-xl-0">
+                                        <div class="card-body">
+                                            <div class="small text-uppercase fw-bold mb-4">Code</div>
+                                            <ul class="list-unstyled mb-4">
+                                                <% include partials/skills/html5.ejs %>
+                                                <% include partials/skills/css3.ejs %>
+                                                <% include partials/skills/javascript.ejs %>
+                                                <% include partials/skills/php.ejs %>
+                                                <% include partials/skills/mysql.ejs %>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tools -->
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card mb-5 mb-xl-0">
+                                        <div class="card-body">
+                                            <div class="small text-uppercase fw-bold mb-4">
+                                                Tools
+                                            </div>
+                                            <ul class="list-unstyled mb-4">
+                                                <% include partials/skills/wp.ejs %>
+                                                <% include partials/skills/asana.ejs %>
+                                                <% include partials/skills/google-workspace.ejs %>
+                                                <% include partials/skills/toggl-track.ejs %>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Integrations -->
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card mb-5 mb-xl-0">
+                                        <div class="card-body">
+                                            <div class="small text-uppercase fw-bold mb-4">Integrations</div>
+                                            <ul class="list-unstyled mb-4">
+                                                <% include partials/skills/high-level.ejs %>
+                                                <% include partials/skills/ga.ejs %>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center my-5">
+                                <a class="btn btn-lg btn-primary" target="_blank" href="https://smithiesdreamvacations.net/">
+                                    View Website
+                                    <i class="bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <% include partials/contact-cta %>
+        <% include partials/footer %>
+        <% include partials/footer-scripts %>
+    </body>
+</html>
