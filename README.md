@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.2.4
+* Version 2.2.5
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.2.5 - 2024/08/27 - SDV View Typo Fix.
 * v2.2.4 - 2024/08/07 - Turada View. SDV Edits.
 * v2.2.3 - 2024/08/06 - SDV View.
 * v2.2.2 - 2024/08/05 - Fixed Nani Sweets Website Link.
