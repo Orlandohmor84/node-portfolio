@@ -79,11 +79,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 
-  if (req.headers.host.startsWith('www.')) {
-    const nonWwwHost = req.headers.host.slice(4);
-    return res.redirect(301, req.protocol + '://' + nonWwwHost + req.originalUrl);
-  }
-  next();
 });
 
 module.exports = app;
