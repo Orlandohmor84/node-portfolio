@@ -23,6 +23,7 @@ var jktRouter = require('./routes/portfolio-jkt');
 var naniSweetsRouter = require('./routes/portfolio-nani-sweets');
 var sdvRouter = require('./routes/portfolio-smithies-dream-vacations');
 var turadaRouter = require('./routes/portfolio-turada');
+var mdlRouter = require('./routes/portfolio-mdl');
 var contactRouter = require('./routes/contact');
 const privacyRouter = require('./routes/privacy');
 
@@ -57,6 +58,7 @@ app.use('/portfolio-jkt', jktRouter);
 app.use('/portfolio-nani-sweets', naniSweetsRouter);
 app.use('/portfolio-smithies-dream-vacations', sdvRouter);
 app.use('/portfolio-turada', turadaRouter);
+app.use('/portfolio-mdl', mdlRouter);
 app.use('/contact', contactRouter);
 app.use('/privacy', privacyRouter);
 
