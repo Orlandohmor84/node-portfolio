@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.2.7
+* Version 2.2.8
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.2.8 - 2024/08/28 - Fixed Broken External Links.
 * v2.2.7 - 2024/08/28 - Fixed JK Television View.
 * v2.2.6 - 2024/08/28 - Moved external Portfolio Links to Routes.
 * v2.2.5 - 2024/08/27 - SDV View Typo Fix.
