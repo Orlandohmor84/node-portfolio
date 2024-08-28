@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.2.9
+* Version 2.2.10
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.2.10 - 2024/08/28 - Skills, Portfolio, IBWS Updates.
 * v2.2.9 - 2024/08/28 - Hid Webs v1 External Links.
 * v2.2.8 - 2024/08/28 - Fixed Broken External Links.
 * v2.2.7 - 2024/08/28 - Fixed JK Television View.

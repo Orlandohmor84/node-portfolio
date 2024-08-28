@@ -14,11 +14,12 @@
                             <div class="text-center mb-5">
                                 <h1 class="fw-bolder"><%= title %></h1>
                                 <p class="lead fw-normal text-muted mb-0"><%- summary_p1 %></p>
+                                <p class="text-muted mb-0"><%- summary_p2 %>
                             </div>
                         </div>
                     </div>
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-12 text-center" data-aos="fade-up"><img class="img-fluid rounded-3 mb-5" src="https://storage.googleapis.com/ibuildwebs-public/nodes/ibws/iBuildWeb-Solutions-Web-Design-and-Development-Digital-Marketing-eCommerce-Analytics-Social-Media-and-More-1062x720.webp" alt="<% title %>" /></div>
+                        <div class="col-12 text-center" data-aos="fade-up"><img class="img-fluid rounded-3 mb-5" src="https://storage.googleapis.com/ibuildwebs-public/nodes/ibws/ibws-desktop-1062x720.webp" alt="<% title %>" /></div>
                         <!--<div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>-->
                         <!--<div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>-->
                     </div>
@@ -35,13 +36,11 @@
                                         <div class="card-body">
                                             <div class="small text-uppercase fw-bold mb-4">Code</div>
                                             <ul class="list-unstyled mb-4">
-                                                <% include partials/skills/php.ejs %>
                                                 <% include partials/skills/html5.ejs %>
                                                 <% include partials/skills/css3.ejs %>
                                                 <% include partials/skills/javascript.ejs %>
-                                                <% include partials/skills/jquery.ejs %>
-                                                <% include partials/skills/git.ejs %>
-                                                <% include partials/skills/bootstrap.ejs %>
+                                                <% include partials/skills/php.ejs %>
+                                                <% include partials/skills/mysql.ejs %>
                                             </ul>
                                         </div>
                                     </div>
@@ -54,11 +53,11 @@
                                                 Tools
                                             </div>
                                             <ul class="list-unstyled mb-4">
-                                                <% include partials/skills/gulp.ejs %>
-                                                <% include partials/skills/babel.ejs %>
-                                                <% include partials/skills/github.ejs %>
-                                                <% include partials/skills/jira.ejs %>
+                                                <% include partials/skills/wp.ejs %>
+                                                <% include partials/skills/elementor.ejs %>
+                                                <% include partials/skills/asana.ejs %>
                                                 <% include partials/skills/google-workspace.ejs %>
+                                                <% include partials/skills/toggl-track.ejs %>
                                             </ul>
                                         </div>
                                     </div>
@@ -69,17 +68,19 @@
                                         <div class="card-body">
                                             <div class="small text-uppercase fw-bold mb-4">Integrations</div>
                                             <ul class="list-unstyled mb-4">
+                                                <% include partials/skills/high-level.ejs %>
                                                 <% include partials/skills/ga.ejs %>
-                                                <% include partials/skills/hubspot.ejs %>
                                                 <% include partials/skills/tawk.ejs %>
-                                                <% include partials/skills/mailchimp.ejs %>
+                                                <% include partials/skills/google-ads.ejs %>
+                                                <% include partials/skills/meta-ads.ejs %>
+                                                <% include partials/skills/rollworks.ejs %>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-center my-5">
-                                <a class="btn btn-lg btn-primary" target="_blank" href="https://ibuildweb.solutions">
+                                <a class="btn btn-lg btn-primary" target="_blank" href="<%= link %>">
                                     View Website
                                     <i class="bi-arrow-right"></i>
                                 </a>
