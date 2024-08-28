@@ -6,7 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('portfolio-eggshub', 
     { title: 'EggsHub',
       pageId: 'eggshub',
-      summary_p1: 'WordPress blog all about eggs.'
+      summary_p1: 'WordPress blog all about eggs.',
+      link: 'https://www.eggshub.com'
   });
 });
 
