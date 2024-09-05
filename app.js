@@ -27,6 +27,7 @@ var mdlRouter = require('./routes/portfolio-mdl');
 var abbsiRouter = require('./routes/portfolio-abbsi');
 var contactRouter = require('./routes/contact');
 const privacyRouter = require('./routes/privacy');
+const accessibilityRouter = require('./routes/accessibility');
 
 var app = express();
 
@@ -63,6 +64,7 @@ app.use('/portfolio-mdl', mdlRouter);
 app.use('/portfolio-abbsi', abbsiRouter);
 app.use('/contact', contactRouter);
 app.use('/privacy', privacyRouter);
+app.use('/accessibility', accessibilityRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
