@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.2.17
+* Version 2.2.18
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.2.18 - 2024/10/11 - Added Figma.
 * v2.2.17 - 2024/09/11 - iBuildWebs v1 Portfolio Updates.
 * v2.2.16 - 2024/09/05 - Web Accessibility Policy.
 * v2.2.15 - 2024/08/28 - Fixed broken Link.
