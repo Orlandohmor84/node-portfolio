@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.2.19
+* Version 2.2.20
 
 ## How do I get set up ##
 
@@ -27,7 +27,8 @@
 
 ## Release History ##
 
-* v2.2.19 - 2024/01/15 - Added Parking Mate, RankMath, Clarity.
+* v2.2.20 - 2025/01/15 - Added Dizzy Magic.
+* v2.2.19 - 2025/01/15 - Added Parking Mate, RankMath, Clarity.
 * v2.2.18 - 2024/10/11 - Added Figma.
 * v2.2.17 - 2024/09/11 - iBuildWebs v1 Portfolio Updates.
 * v2.2.16 - 2024/09/05 - Web Accessibility Policy.
