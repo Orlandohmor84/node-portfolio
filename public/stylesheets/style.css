@@ -1,3 +1,6 @@
+html, body {
+    overflow-x: hidden; /* Removes extra space on right side on mobile */
+}
 .portfolioWrapper .col-lg-6 {
     border-bottom: 2px solid #ccc;
     margin-top: 100px;
