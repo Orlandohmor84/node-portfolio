@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.2.22
+* Version 2.2.23
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.2.23 - 2025/01/22 - Add Tropical Timberwoods. Updated Year in Footer.
 * v2.2.22 - 2025/01/22 - Added Health Insurance Now. Fixed AOS Bug.
 * v2.2.21 - 2025/01/15 - Remove Extra Space on Right Side on Mobile.
 * v2.2.20 - 2025/01/15 - Added Dizzy Magic.
