@@ -1,6 +1,8 @@
-html, body {
-    overflow-x: hidden; /* Removes extra space on right side on mobile */
-}
+
+/* Overflow hidden was causing AOS animations to not fire on scroll. Need to find another way to fix extra monile padding isuue. */
+/*html, body {*/
+    /*overflow-x: hidden;*/ /* Removes extra space on right side on mobile */
+/*}*/
 .portfolioWrapper .col-lg-6 {
     border-bottom: 2px solid #ccc;
     margin-top: 100px;
