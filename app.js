@@ -31,6 +31,7 @@ const healthInsuranceNowRouter = require('./routes/portfolio-health-insurance-no
 const tropicalTimberwoodsRouter = require('./routes/portfolio-tropical-timberwoods');
 const theGodfatherSolutionRouter = require('./routes/portfolio-the-godfather-solution');
 const freshStartTherapyServicesRouter = require('./routes/portfolio-fresh-start-therapy-services');
+const solidAthleticsRouter = require('./routes/portfolio-solid-athletics');
 const contactRouter = require('./routes/contact');
 const privacyRouter = require('./routes/privacy');
 const accessibilityRouter = require('./routes/accessibility');
@@ -74,6 +75,7 @@ app.use('/portfolio-health-insurance-now', healthInsuranceNowRouter);
 app.use('/portfolio-tropical-timberwoods', tropicalTimberwoodsRouter);
 app.use('/portfolio-the-godfather-solution', theGodfatherSolutionRouter);
 app.use('/portfolio-fresh-start-therapy-services', freshStartTherapyServicesRouter);
+app.use('/portfolio-solid-athletics', solidAthleticsRouter);
 app.use('/contact', contactRouter);
 app.use('/privacy', privacyRouter);
 app.use('/accessibility', accessibilityRouter);
