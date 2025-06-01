@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.3.1
+* Version 2.3.2
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.3.2 - 2025/06/01 - Simple Practice Edit.
 * v2.3.1 - 2025/06/01 - Added Fresh Start Therapy Services.
 * v2.3.0 - 2025/06/01 - Portfolio mega menu.
 * v2.2.24 - 2025/06/01 - Added The Godfather Solution.
