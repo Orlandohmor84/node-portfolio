@@ -35,6 +35,7 @@ const solidAthleticsRouter = require('./routes/portfolio-solid-athletics');
 const contactRouter = require('./routes/contact');
 const privacyRouter = require('./routes/privacy');
 const accessibilityRouter = require('./routes/accessibility');
+const testimonialsRouter = require('./routes/testimonials');
 
 var app = express();
 
@@ -79,6 +80,7 @@ app.use('/portfolio-solid-athletics', solidAthleticsRouter);
 app.use('/contact', contactRouter);
 app.use('/privacy', privacyRouter);
 app.use('/accessibility', accessibilityRouter);
+app.use('/testimonials', testimonialsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
