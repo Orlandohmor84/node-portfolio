@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.3.3
+* Version 2.3.4
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.3.4 - 2025/06/01 - Added SFL Docs.
 * v2.3.3 - 2025/06/01 - Added Solid Athletics.
 * v2.3.2 - 2025/06/01 - Simple Practice Edit.
 * v2.3.1 - 2025/06/01 - Added Fresh Start Therapy Services.
