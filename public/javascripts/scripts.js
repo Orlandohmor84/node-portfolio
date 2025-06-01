@@ -8,4 +8,13 @@ function getYearFunc() {
   document.getElementById("year").innerHTML = n;
 }
 document.getElementById("footer-main").addEventListener("load", getYearFunc);
-    
+  
+/* Script for mega manu */
+document.addEventListener("DOMContentLoaded", function(){
+        /////// Prevent closing from click inside dropdown
+        document.querySelectorAll('.dropdown-menu').forEach(function(element){
+        	element.addEventListener('click', function (e) {
+        		e.stopPropagation();
+        	});
+        })
+    });
