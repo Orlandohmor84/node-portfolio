@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.4.0
+* Version 2.4.1
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.4.1 - 2025/06/20 - Added Superior Shingles.
 * v2.4.0 - 2025/06/01 - Testimonials View.
 * v2.3.4 - 2025/06/01 - Added SFL Docs.
 * v2.3.3 - 2025/06/01 - Added Solid Athletics.

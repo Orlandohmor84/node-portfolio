@@ -32,6 +32,7 @@ const tropicalTimberwoodsRouter = require('./routes/portfolio-tropical-timberwoo
 const theGodfatherSolutionRouter = require('./routes/portfolio-the-godfather-solution');
 const freshStartTherapyServicesRouter = require('./routes/portfolio-fresh-start-therapy-services');
 const solidAthleticsRouter = require('./routes/portfolio-solid-athletics');
+const superiorShinglesRouter = require('./routes/portfolio-superior-shingles');
 const contactRouter = require('./routes/contact');
 const privacyRouter = require('./routes/privacy');
 const accessibilityRouter = require('./routes/accessibility');
@@ -77,6 +78,7 @@ app.use('/portfolio-tropical-timberwoods', tropicalTimberwoodsRouter);
 app.use('/portfolio-the-godfather-solution', theGodfatherSolutionRouter);
 app.use('/portfolio-fresh-start-therapy-services', freshStartTherapyServicesRouter);
 app.use('/portfolio-solid-athletics', solidAthleticsRouter);
+app.use('/portfolio-superior-shingles', superiorShinglesRouter);
 app.use('/contact', contactRouter);
 app.use('/privacy', privacyRouter);
 app.use('/accessibility', accessibilityRouter);
