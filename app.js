@@ -8,6 +8,10 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const aboutRouter = require('./routes/about');
 const skillsRouter = require('./routes/skills');
+const contactRouter = require('./routes/contact');
+const privacyRouter = require('./routes/privacy');
+const accessibilityRouter = require('./routes/accessibility');
+const testimonialsRouter = require('./routes/testimonials');
 const portfolioRouter = require('./routes/portfolio');
 const sflusRouter = require('./routes/portfolio-sfl-us');
 const sflcaRouter = require('./routes/portfolio-sfl-ca');
@@ -33,10 +37,8 @@ const theGodfatherSolutionRouter = require('./routes/portfolio-the-godfather-sol
 const freshStartTherapyServicesRouter = require('./routes/portfolio-fresh-start-therapy-services');
 const solidAthleticsRouter = require('./routes/portfolio-solid-athletics');
 const superiorShinglesRouter = require('./routes/portfolio-superior-shingles');
-const contactRouter = require('./routes/contact');
-const privacyRouter = require('./routes/privacy');
-const accessibilityRouter = require('./routes/accessibility');
-const testimonialsRouter = require('./routes/testimonials');
+const hannaSusannaArtRouter = require('./routes/portfolio-hanna-susanna-art');
+
 
 var app = express();
 
@@ -54,6 +56,10 @@ app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/skills', skillsRouter);
 app.use('/users', usersRouter);
+app.use('/contact', contactRouter);
+app.use('/privacy', privacyRouter);
+app.use('/accessibility', accessibilityRouter);
+app.use('/testimonials', testimonialsRouter);
 app.use('/portfolio', portfolioRouter);
 app.use('/portfolio-sfl-us', sflusRouter);
 app.use('/portfolio-sfl-ca', sflcaRouter);
@@ -79,10 +85,8 @@ app.use('/portfolio-the-godfather-solution', theGodfatherSolutionRouter);
 app.use('/portfolio-fresh-start-therapy-services', freshStartTherapyServicesRouter);
 app.use('/portfolio-solid-athletics', solidAthleticsRouter);
 app.use('/portfolio-superior-shingles', superiorShinglesRouter);
-app.use('/contact', contactRouter);
-app.use('/privacy', privacyRouter);
-app.use('/accessibility', accessibilityRouter);
-app.use('/testimonials', testimonialsRouter);
+app.use('/portfolio-hanna-susanna-art', hannaSusannaArtRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
