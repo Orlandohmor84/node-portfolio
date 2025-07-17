@@ -38,6 +38,7 @@ const freshStartTherapyServicesRouter = require('./routes/portfolio-fresh-start-
 const solidAthleticsRouter = require('./routes/portfolio-solid-athletics');
 const superiorShinglesRouter = require('./routes/portfolio-superior-shingles');
 const hannaSusannaArtRouter = require('./routes/portfolio-hanna-susanna-art');
+const fiveStonesLawncareRouter = require('./routes/portfolio-five-stones-lawncare');
 
 
 var app = express();
@@ -86,6 +87,7 @@ app.use('/portfolio-fresh-start-therapy-services', freshStartTherapyServicesRout
 app.use('/portfolio-solid-athletics', solidAthleticsRouter);
 app.use('/portfolio-superior-shingles', superiorShinglesRouter);
 app.use('/portfolio-hanna-susanna-art', hannaSusannaArtRouter);
+app.use('/portfolio-five-stones-lawncare', fiveStonesLawncareRouter);
 
 
 // catch 404 and forward to error handler
