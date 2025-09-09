@@ -63,3 +63,10 @@
 .recommendations .card {
     margin-bottom: 50px;
 }
+
+/*----- Start Hero Banner Section -----*/
+#hero-banner {
+    background: url('https://storage.googleapis.com/ibuildwebs-public/binary-code-numbers-in-blue-abstract-speed-motion-2024-10-18-09-15-15-utc-2000x1125-opacity-50.webp');
+    text-align: center;
+}
+/*----- End Hero Banner Section -----*/
