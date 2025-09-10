@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.4.5
+* Version 2.4.6
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.4.6 - 2025/09/10 - Featured Projects Update.
 * v2.4.5 - 2025/09/09 - Home Page Hero Banner.
 * v2.4.4 - 2025/07/17 - Added Sitemap. Bropken Link Fix.
 * v2.4.3 - 2025/07/17 - Added 5 Stones Lawncare.
