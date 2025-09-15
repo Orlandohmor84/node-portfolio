@@ -91,9 +91,44 @@ app.use('/portfolio-five-stones-lawncare', fiveStonesLawncareRouter);
 
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+app.use(function (req, res, next) {
+  let host = req.headers.host || "";
+  let url = req.originalUrl || "/";
+  let protocol = req.protocol;
+
+  // If behind a proxy (like Nginx, Heroku, Vercel), trust X-Forwarded-Proto
+  if (req.headers["x-forwarded-proto"]) {
+    protocol = req.headers["x-forwarded-proto"];
+  }
+
+  // Skip redirects in development
+  if (host.includes("localhost") || host.startsWith("127.0.0.1")) {
+    return next();
+  }
+
+  let redirectNeeded = false;
+  let newHost = host;
+  let newProtocol = protocol;
+
+  // Force non-www
+  if (host.startsWith("www.")) {
+    newHost = host.slice(4);
+    redirectNeeded = true;
+  }
+
+  // Force HTTPS
+  if (protocol !== "https") {
+    newProtocol = "https";
+    redirectNeeded = true;
+  }
+
+  if (redirectNeeded) {
+    return res.redirect(301, `${newProtocol}://${newHost}${url}`);
+  }
+
+  next();
 });
+
 
 // error handler
 app.use(function(err, req, res, next) {

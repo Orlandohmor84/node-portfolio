@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.4.6
+* Version 2.5.0
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.5.0 - 2025/09/15 - Redirect www and http to non-ww and https.
 * v2.4.6 - 2025/09/10 - Featured Projects Update.
 * v2.4.5 - 2025/09/09 - Home Page Hero Banner.
 * v2.4.4 - 2025/07/17 - Added Sitemap. Bropken Link Fix.
