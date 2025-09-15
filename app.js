@@ -90,38 +90,40 @@ app.use('/portfolio-hanna-susanna-art', hannaSusannaArtRouter);
 app.use('/portfolio-five-stones-lawncare', fiveStonesLawncareRouter);
 
 
-// BEFORE your redirect middleware:
-app.set("trust proxy", true); // needed on Heroku/Render/NGINX/Cloudflare/etc.
+app.set("trust proxy", true); // if behind NGINX/Heroku/Cloudflare/etc.
 
-// Combined non-www + HTTPS redirect (dev-safe + proxy-safe)
 app.use(function (req, res, next) {
   const host = req.headers.host || "";
   const url  = req.originalUrl || "/";
 
-  // Skip localhost/dev
-  if (host.includes("localhost") || host.startsWith("127.0.0.1")) return next();
+  // Skip localhost / dev
+  if (host.includes("localhost") || host.startsWith("127.0.0.1")) {
+    return next();
+  }
 
-  // With trust proxy enabled, req.secure reflects X-Forwarded-Proto correctly
   const isHttps = req.secure === true;
 
   let newHost = host;
   let needRedirect = false;
 
-  // Force non-www
-  if (host.startsWith("www.")) {
-    newHost = host.slice(4);
+  // Force www
+  if (!host.startsWith("www.")) {
+    newHost = "www." + host;
     needRedirect = true;
   }
 
   // Force HTTPS
-  if (!isHttps) needRedirect = true;
+  if (!isHttps) {
+    needRedirect = true;
+  }
 
   if (needRedirect) {
-    const location = `https://${newHost}${url}`;
-    return res.redirect(301, location);
+    return res.redirect(301, `https://${newHost}${url}`);
   }
+
   next();
 });
+
 
 
 // error handler
