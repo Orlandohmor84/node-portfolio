@@ -90,42 +90,36 @@ app.use('/portfolio-hanna-susanna-art', hannaSusannaArtRouter);
 app.use('/portfolio-five-stones-lawncare', fiveStonesLawncareRouter);
 
 
-// catch 404 and forward to error handler
+// BEFORE your redirect middleware:
+app.set("trust proxy", true); // needed on Heroku/Render/NGINX/Cloudflare/etc.
+
+// Combined non-www + HTTPS redirect (dev-safe + proxy-safe)
 app.use(function (req, res, next) {
-  let host = req.headers.host || "";
-  let url = req.originalUrl || "/";
-  let protocol = req.protocol;
+  const host = req.headers.host || "";
+  const url  = req.originalUrl || "/";
 
-  // If behind a proxy (like Nginx, Heroku, Vercel), trust X-Forwarded-Proto
-  if (req.headers["x-forwarded-proto"]) {
-    protocol = req.headers["x-forwarded-proto"];
-  }
+  // Skip localhost/dev
+  if (host.includes("localhost") || host.startsWith("127.0.0.1")) return next();
 
-  // Skip redirects in development
-  if (host.includes("localhost") || host.startsWith("127.0.0.1")) {
-    return next();
-  }
+  // With trust proxy enabled, req.secure reflects X-Forwarded-Proto correctly
+  const isHttps = req.secure === true;
 
-  let redirectNeeded = false;
   let newHost = host;
-  let newProtocol = protocol;
+  let needRedirect = false;
 
   // Force non-www
   if (host.startsWith("www.")) {
     newHost = host.slice(4);
-    redirectNeeded = true;
+    needRedirect = true;
   }
 
   // Force HTTPS
-  if (protocol !== "https") {
-    newProtocol = "https";
-    redirectNeeded = true;
-  }
+  if (!isHttps) needRedirect = true;
 
-  if (redirectNeeded) {
-    return res.redirect(301, `${newProtocol}://${newHost}${url}`);
+  if (needRedirect) {
+    const location = `https://${newHost}${url}`;
+    return res.redirect(301, location);
   }
-
   next();
 });
 
