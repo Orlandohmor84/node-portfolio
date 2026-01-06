@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.6.0
+* Version 2.6.1
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.6.1 - 2026/01/06 - Added Magic & Mayhem Live.
 * v2.6.0 - 2025/09/15 - Redirect from non-www to www.
 * v2.5.1 - 2025/09/15 - Trust proxy and harden the middleware.
 * v2.5.0 - 2025/09/15 - Redirect www and http to non-ww and https.

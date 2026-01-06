@@ -39,6 +39,7 @@ const solidAthleticsRouter = require('./routes/portfolio-solid-athletics');
 const superiorShinglesRouter = require('./routes/portfolio-superior-shingles');
 const hannaSusannaArtRouter = require('./routes/portfolio-hanna-susanna-art');
 const fiveStonesLawncareRouter = require('./routes/portfolio-five-stones-lawncare');
+const mmLiveRouter = require('./routes/portfolio-magic-mayhem-live');
 
 
 var app = express();
@@ -88,6 +89,7 @@ app.use('/portfolio-solid-athletics', solidAthleticsRouter);
 app.use('/portfolio-superior-shingles', superiorShinglesRouter);
 app.use('/portfolio-hanna-susanna-art', hannaSusannaArtRouter);
 app.use('/portfolio-five-stones-lawncare', fiveStonesLawncareRouter);
+app.use('/portfolio-magic-mayhem-live', mmLiveRouter);
 
 
 app.set("trust proxy", true); // if behind NGINX/Heroku/Cloudflare/etc.
