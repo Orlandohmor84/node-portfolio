@@ -40,6 +40,7 @@ const superiorShinglesRouter = require('./routes/portfolio-superior-shingles');
 const hannaSusannaArtRouter = require('./routes/portfolio-hanna-susanna-art');
 const fiveStonesLawncareRouter = require('./routes/portfolio-five-stones-lawncare');
 const mmLiveRouter = require('./routes/portfolio-magic-mayhem-live');
+const infSigRouter = require('./routes/portfolio-infinite-signature');
 
 
 var app = express();
@@ -90,6 +91,7 @@ app.use('/portfolio-superior-shingles', superiorShinglesRouter);
 app.use('/portfolio-hanna-susanna-art', hannaSusannaArtRouter);
 app.use('/portfolio-five-stones-lawncare', fiveStonesLawncareRouter);
 app.use('/portfolio-magic-mayhem-live', mmLiveRouter);
+app.use('/portfolio-infinite-signature', infSigRouter);
 
 
 app.set("trust proxy", true); // if behind NGINX/Heroku/Cloudflare/etc.
