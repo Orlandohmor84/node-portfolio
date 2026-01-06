@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.6.3
+* Version 2.6.4
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.6.4 - 2026/01/06 - Added Google Search Console to Nodes.
 * v2.6.3 - 2026/01/06 - Added Zota Properties.
 * v2.6.2 - 2026/01/06 - Added Infinite Signature.
 * v2.6.1 - 2026/01/06 - Added Magic & Mayhem Live.
