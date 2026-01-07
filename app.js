@@ -46,6 +46,7 @@ const naniSweetsLpRouter = require('./routes/portfolio-nani-sweets-lp');
 const solidAthleticsSlimFitLpRouter = require('./routes/portfolio-solid-athletics-slim-fit-lp');
 const ibwsRepMgmtRouter = require('./routes/portfolio-ibws-rep-mgmt');
 const osvanaRouter = require('./routes/portfolio-osvana');
+const ibwsBfcmRouter = require('./routes/portfolio-ibws-bfcm');
 
 
 var app = express();
@@ -102,6 +103,7 @@ app.use('/portfolio-nani-sweets-lp', naniSweetsLpRouter);
 app.use('/portfolio-solid-athletics-slim-fit-lp', solidAthleticsSlimFitLpRouter);
 app.use('/portfolio-ibws-rep-mgmt', ibwsRepMgmtRouter);
 app.use('/portfolio-osvana', osvanaRouter);
+app.use('/portfolio-ibws-bfcm', ibwsBfcmRouter);
 
 
 app.set("trust proxy", true); // if behind NGINX/Heroku/Cloudflare/etc.
