@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.6.6
+* Version 2.6.7
 
 ## How do I get set up ##
 
@@ -27,8 +27,9 @@
 
 ## Release History ##
 
-* v2.6.6 - 2028/01/07 - Portfolio Overview Stlying Updates.
-* v2.6.5 - 2025/01/07 - Added Nani Sweets LP. Updated copyright year.
+* v2.6.7 - 2026/01/07 - Added Solid Athletics LP.
+* v2.6.6 - 2026/01/07 - Portfolio Overview Stlying Updates.
+* v2.6.5 - 2026/01/07 - Added Nani Sweets LP. Updated copyright year.
 * v2.6.4 - 2026/01/06 - Added Google Search Console to Nodes.
 * v2.6.3 - 2026/01/06 - Added Zota Properties.
 * v2.6.2 - 2026/01/06 - Added Infinite Signature.
