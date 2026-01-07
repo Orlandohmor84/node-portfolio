@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.6.10
+* Version 2.6.11
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.6.11 - 2026/01/07 - Added Recently Added Skills to Skills View.
 * v2.6.10 - 2026/01/07 - Added BFCM Website Sale LP.
 * v2.6.9 - 2026/01/07 - Added OsvAna Realty.
 * v2.6.8 - 2026/01/07 - Added Reputation Management.
