@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.6.8
+* Version 2.6.9
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.6.9 - 2026/01/07 - Added OsvAna Realty.
 * v2.6.8 - 2026/01/07 - Added Reputation Management.
 * v2.6.7 - 2026/01/07 - Added Solid Athletics LP.
 * v2.6.6 - 2026/01/07 - Portfolio Overview Stlying Updates.
