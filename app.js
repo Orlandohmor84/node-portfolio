@@ -50,7 +50,6 @@ const ibwsBfcmRouter = require('./routes/portfolio-ibws-bfcm');
 
 const app = express();
 
-// If behind proxy / Cloudflare / Heroku / Render / Nginx
 app.set('trust proxy', true);
 
 // view engine setup
@@ -62,23 +61,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use((req, res, next) => {
-  const host = req.headers.host || '';
-  const url = req.originalUrl || '/';
-
-  if (host.includes('localhost') || host.startsWith('127.0.0.1')) {
-    return next();
-  }
-
-  const hostname = host.split(':')[0];
-
-  if (!hostname.startsWith('www.')) {
-    return res.redirect(301, `https://www.${hostname}${url}`);
-  }
-
-  next();
-});
 
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
