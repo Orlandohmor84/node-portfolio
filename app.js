@@ -106,7 +106,7 @@ app.use('/portfolio-osvana', osvanaRouter);
 app.use('/portfolio-ibws-bfcm', ibwsBfcmRouter);
 
 
-app.set("trust proxy", true); // if behind NGINX/Heroku/Cloudflare/etc.
+// app.set("trust proxy", true); // if behind NGINX/Heroku/Cloudflare/etc.
 
 app.use(function (req, res, next) {
   const host = req.headers.host || "";
