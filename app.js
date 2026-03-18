@@ -63,7 +63,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Redirect middleware should come BEFORE routes
 app.use((req, res, next) => {
   const host = req.headers.host || '';
   const url = req.originalUrl || '/';
@@ -73,8 +72,10 @@ app.use((req, res, next) => {
     return next();
   }
 
-  const isHttps = req.secure;
-  const hostname = host.split(':')[0]; // remove port if present
+  const forwardedProto = req.headers['x-forwarded-proto'];
+  const isHttps = req.secure || forwardedProto === 'https';
+
+  const hostname = host.split(':')[0];
 
   let newHost = hostname;
   let needRedirect = false;
