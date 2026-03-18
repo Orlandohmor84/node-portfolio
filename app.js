@@ -48,8 +48,10 @@ const ibwsRepMgmtRouter = require('./routes/portfolio-ibws-rep-mgmt');
 const osvanaRouter = require('./routes/portfolio-osvana');
 const ibwsBfcmRouter = require('./routes/portfolio-ibws-bfcm');
 
+const app = express();
 
-var app = express();
+// If behind proxy / Cloudflare / Heroku / Render / Nginx
+app.set('trust proxy', true);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -61,32 +63,29 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Redirect middleware should come BEFORE routes
+app.use((req, res, next) => {
+  const host = req.headers.host || '';
+  const url = req.originalUrl || '/';
 
-
-
-app.set("trust proxy", true); // if behind NGINX/Heroku/Cloudflare/etc.
-
-app.use(function (req, res, next) {
-  const host = req.headers.host || "";
-  const url  = req.originalUrl || "/";
-
-  // Skip localhost / dev
-  if (host.includes("localhost") || host.startsWith("127.0.0.1")) {
+  // Skip local development
+  if (host.includes('localhost') || host.startsWith('127.0.0.1')) {
     return next();
   }
 
-  const isHttps = req.secure === true;
+  const isHttps = req.secure;
+  const hostname = host.split(':')[0]; // remove port if present
 
-  let newHost = host;
+  let newHost = hostname;
   let needRedirect = false;
 
   // Force www
-  if (!host.startsWith("www.")) {
-    newHost = "www." + host;
+  if (!hostname.startsWith('www.')) {
+    newHost = `www.${hostname}`;
     needRedirect = true;
   }
 
-  // Force HTTPS
+  // Force https
   if (!isHttps) {
     needRedirect = true;
   }
@@ -142,18 +141,18 @@ app.use('/portfolio-ibws-rep-mgmt', ibwsRepMgmtRouter);
 app.use('/portfolio-osvana', osvanaRouter);
 app.use('/portfolio-ibws-bfcm', ibwsBfcmRouter);
 
-
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
+});
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
   res.status(err.status || 500);
   res.render('error');
-
 });
 
 module.exports = app;
