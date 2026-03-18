@@ -61,6 +61,43 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
+
+app.set("trust proxy", true); // if behind NGINX/Heroku/Cloudflare/etc.
+
+app.use(function (req, res, next) {
+  const host = req.headers.host || "";
+  const url  = req.originalUrl || "/";
+
+  // Skip localhost / dev
+  if (host.includes("localhost") || host.startsWith("127.0.0.1")) {
+    return next();
+  }
+
+  const isHttps = req.secure === true;
+
+  let newHost = host;
+  let needRedirect = false;
+
+  // Force www
+  if (!host.startsWith("www.")) {
+    newHost = "www." + host;
+    needRedirect = true;
+  }
+
+  // Force HTTPS
+  if (!isHttps) {
+    needRedirect = true;
+  }
+
+  if (needRedirect) {
+    return res.redirect(301, `https://${newHost}${url}`);
+  }
+
+  next();
+});
+
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/skills', skillsRouter);
@@ -104,41 +141,6 @@ app.use('/portfolio-solid-athletics-slim-fit-lp', solidAthleticsSlimFitLpRouter)
 app.use('/portfolio-ibws-rep-mgmt', ibwsRepMgmtRouter);
 app.use('/portfolio-osvana', osvanaRouter);
 app.use('/portfolio-ibws-bfcm', ibwsBfcmRouter);
-
-
-// app.set("trust proxy", true); // if behind NGINX/Heroku/Cloudflare/etc.
-
-app.use(function (req, res, next) {
-  const host = req.headers.host || "";
-  const url  = req.originalUrl || "/";
-
-  // Skip localhost / dev
-  if (host.includes("localhost") || host.startsWith("127.0.0.1")) {
-    return next();
-  }
-
-  const isHttps = req.secure === true;
-
-  let newHost = host;
-  let needRedirect = false;
-
-  // Force www
-  if (!host.startsWith("www.")) {
-    newHost = "www." + host;
-    needRedirect = true;
-  }
-
-  // Force HTTPS
-  if (!isHttps) {
-    needRedirect = true;
-  }
-
-  if (needRedirect) {
-    return res.redirect(301, `https://${newHost}${url}`);
-  }
-
-  next();
-});
 
 
 
