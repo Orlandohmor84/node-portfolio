@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * iBuildwebs.online Portfolio Website
-* Version 2.6.11
+* Version 2.7.0
 
 ## How do I get set up ##
 
@@ -27,6 +27,7 @@
 
 ## Release History ##
 
+* v2.7.0 - 2026/03/18 - Removed www and https redirects for new host - Hostinger.
 * v2.6.11 - 2026/01/07 - Added Recently Added Skills to Skills View.
 * v2.6.10 - 2026/01/07 - Added BFCM Website Sale LP.
 * v2.6.9 - 2026/01/07 - Added OsvAna Realty.
