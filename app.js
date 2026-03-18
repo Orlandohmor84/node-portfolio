@@ -67,32 +67,14 @@ app.use((req, res, next) => {
   const host = req.headers.host || '';
   const url = req.originalUrl || '/';
 
-  // Skip local development
   if (host.includes('localhost') || host.startsWith('127.0.0.1')) {
     return next();
   }
 
-  const forwardedProto = req.headers['x-forwarded-proto'];
-  const isHttps = req.secure || forwardedProto === 'https';
-
   const hostname = host.split(':')[0];
 
-  let newHost = hostname;
-  let needRedirect = false;
-
-  // Force www
   if (!hostname.startsWith('www.')) {
-    newHost = `www.${hostname}`;
-    needRedirect = true;
-  }
-
-  // Force https
-  if (!isHttps) {
-    needRedirect = true;
-  }
-
-  if (needRedirect) {
-    return res.redirect(301, `https://${newHost}${url}`);
+    return res.redirect(301, `https://www.${hostname}${url}`);
   }
 
   next();
